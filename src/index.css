@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+body,
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+li {
+  list-style: none;
+}
+.pointer {
+  cursor: pointer !important;
+}
+.bolder {
+  font-weight: bold !important;
+}
+.usuario {
+  border: 2px solid #d3d3d3;
+  border-radius: 10px;
+  padding: 20px 10px 10px 10px;
+  position: relative;
+}
+.usuario .acciones {
+  position: absolute;
+  right: 5px;
+  top: 0;
+}
+.usuario .info {
+  font-size: 12px;
+}
