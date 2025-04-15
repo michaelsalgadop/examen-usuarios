@@ -11,6 +11,15 @@ export const TIPO = {
   NOTICE: "notice",
   INFO: "info",
 };
+/**
+ * Contexto de alerta para poder mostrar al usuario que las acciones que realiza en la app si
+ * han tenido exito o no.
+ * Disponemos de los métodos mostrarAlerta y cerrarAlerta para realizar todas las acciones necesarias
+ * que necesitemos.
+ * @param {*} chidren código que irá dentro del contexto
+ * @returns El contexto y todo el código(App.js) dentro para poder utilizar los valores del contexto
+ * donde necesitemos.
+ */
 export const AlertaProvider = ({ children }) => {
   const [alerta, setAlerta] = useState({
     estado: false,

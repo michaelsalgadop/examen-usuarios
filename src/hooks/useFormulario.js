@@ -5,6 +5,9 @@ export const useFormulario = (datosProducto) => {
 
   const setData = (e) => {
     const elemento = e.target;
+    /** Cuando se escriba en uno de los campos de formulario, pasará por aquí y a partir del id del elemento
+     * tarjeteado almacenará su valor.
+     */
     setDatosFormulario({
       ...datosFormulario,
       [e.target.id]:
